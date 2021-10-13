@@ -4,6 +4,9 @@ import pandas as pd
 import numpy as np
 import math
 
+print("read csv")
+predict_flight = pd.read_csv('predict_flight.csv')
+print ("end read csv")
 # create the Flask app
 app = Flask(__name__)
 
@@ -48,8 +51,6 @@ def recommandation():
  
 if __name__ == '__main__':
     # run app in debug mode on port 5000
-    print("read csv")
-    predict_flight = pd.read_csv('predict_flight.csv')
-    print ("end read csv")
+   
     app.run(debug=True, port=5000)
     
