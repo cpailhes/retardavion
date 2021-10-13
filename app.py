@@ -48,7 +48,8 @@ def recommandation():
  
 if __name__ == '__main__':
     # run app in debug mode on port 5000
+    print("read csv")
     predict_flight = pd.read_csv('predict_flight.csv')
-    
+    print ("end read csv")
     app.run(debug=True, port=5000)
     
